@@ -4,8 +4,9 @@ import './navbar.sass'
 import {Link} from 'react-router-dom'
 
 const Navbar = () =>{
-  render(){
+  
     return (
+      
       <Menu inverted id='men' color='grey'  >
 
       <Menu.Item position='left'>
@@ -15,16 +16,19 @@ const Navbar = () =>{
 
       <Menu.Item position='rigth' >
         <Link to='login'>Log In</Link>
-        </Menu.Item>
+      </Menu.Item>
 
 
       <Menu.Item
-        name='Sing Up'
-      />
+        name='Albunes'>
+        <Link to='Post'>Albunes </Link>
+      </Menu.Item>
+      
       
     </Menu>
+    
   );
-  }
+  
     
 }
   

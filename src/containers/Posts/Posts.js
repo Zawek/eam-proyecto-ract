@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios'
+import './Posts.sass'
+import Navbar from './../../components/navbar/navbar'
 
 class Posts extends Component{
     constructor(){
@@ -22,11 +24,15 @@ class Posts extends Component{
 
     render(){
     return (
-        <div>
-            <ul>
-                {this.state.posts.map(post =>
-                    <li>{post.title}</li>)}
-            </ul>
+        
+        <div class="a">
+        <Navbar></Navbar>
+            <div class="c">
+                <ul>
+                    {this.state.posts.map(post =>
+                        <li>{post.title}</li>)}
+                </ul>
+            </div>
         </div>
     )
     }
